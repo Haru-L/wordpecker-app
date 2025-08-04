@@ -19,3 +19,10 @@ yarn-error.log*
 *.sw?
 
 */audio-cache
+
+# Frontend build products
+tsconfig.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+backend/static
+backend/static/*

@@ -27,6 +27,9 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
+// Serve Static Files
+app.use('/web', express.static('static'));
+
 // Apply rate limiter only to OpenAI-powered routes
 app.use('/api/learn', openaiRateLimiter);
 app.use('/api/quiz', openaiRateLimiter);

@@ -18,7 +18,7 @@ import { Header } from './components/Header';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Router>
+      <Router basename='/web'>
         <Box bg="slate.900" minH="100vh" color="white">
           <Header />
           <Routes>
